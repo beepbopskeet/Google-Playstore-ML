@@ -1,41 +1,93 @@
-📱 Google Play Store App Analysis
+# 📱 Google Play Store Apps Analysis
 
-This project is a data cleaning and visualization notebook using the Google Play Store Apps Dataset. It was developed as part of the "Veri Bilimi ve Makine Öğrenmesi 2025: 100 Günlük Kamp" Udemy course by Atıl Samancıoğlu.
+Exploratory Data Analysis of Google Play Store applications to uncover trends in ratings, installs, pricing, categories, and user engagement.
 
-🔍 Project Objectives
+---
 
-Clean and preprocess the Google Play Store dataset.
+## 📌 Project Overview
 
-Handle missing and duplicate data.
+This project analyzes thousands of Android applications available on the Google Play Store.
 
-Analyze key trends like:
+The objective is to understand:
 
-Most installed and highest rated apps
+- Which app categories dominate the market
+- User rating behavior
+- Install distribution patterns
+- Pricing trends
+- Application growth over time
 
-Relationship between app category and rating
+---
 
-Distribution of app sizes, prices, and reviews
+## 🛠 Technologies Used
 
-📊 Tools & Libraries
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
-Python (pandas, matplotlib, seaborn)
+---
 
-Jupyter Notebook (ipynb format)
+## 📊 App Category Popularity
+<img width="990" height="1489" alt="barplot" src="https://github.com/user-attachments/assets/73987e30-f7fd-425b-a9fb-90832139231b" />
 
-Data Source: Kaggle Google Play Store Dataset
 
-💡 Key Features
+### Key Insight
 
-Cleaned 10,000+ app entries by:
+Game applications dominate total installations, followed by Communication and Tools categories.
 
-Removing nulls and duplicates
+---
 
-Converting strings to numeric types (e.g., Size, Installs, Price)
+## 📈 Feature Distributions
+<img width="1489" height="921" alt="subplot" src="https://github.com/user-attachments/assets/05403474-52a7-4f1d-a5da-f775c1f9f610" />
 
-Created visualizations such as:
 
-Boxplots for outlier detection
+This visualization highlights the distributions of:
 
-Category-wise ratings
+- Ratings
+- Reviews
+- App Size
+- Installs
+- Price
+- Update Activity
 
-Heatmaps for correlation analysis
+---
+
+## 🔍 Key Findings
+
+### Most Installed Categories
+
+1. Game
+2. Communication
+3. Tools
+4. Productivity
+5. Social
+
+### User Ratings
+
+- Most applications are rated between 4.0 and 4.8.
+- Very low-rated applications are relatively rare.
+
+### Pricing
+
+- The majority of applications are free.
+- Paid apps represent only a small portion of the market.
+
+### Growth Trend
+
+- Application updates increased significantly between 2016 and 2018.
+
+---
+
+## 🚀 How to Run
+
+```bash
+git clone https://github.com/USERNAME/google-play-store-analysis.git
+
+cd google-play-store-analysis
+
+pip install -r requirements.txt
+
+jupyter notebook
+```
