@@ -85,7 +85,7 @@ This visualization highlights the distributions of:
 ```bash
 git clone https://github.com/USERNAME/google-play-store-analysis.git
 
-cd google-play-store-analysis
+cd google-play-store-apps
 
 pip install -r requirements.txt
 
